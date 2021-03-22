@@ -4,7 +4,7 @@ import QuoteComponent from "./quotesComponent";
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
 export default ({ children }) => {
   const { data, error } = useSWR(
-    "https://jsonplaceholder.typicode.com/users/1",
+    "https://jsonplaceholder.typicode.com/users/2",
     fetcher
   );
 
