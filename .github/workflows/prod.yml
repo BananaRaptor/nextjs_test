@@ -35,4 +35,4 @@ jobs:
         run: npx serverless
 
       - name: Upload `.serverless` state to S3
-        run: aws s3 sync .serverless s3://test-serverless-state-bucket/your-site-name/staging/.serverless --delete
+        run: aws s3 sync .serverless s3://hugo2409-serverless-state-bucket/test-nextjs/.serverless --delete
