@@ -18,11 +18,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
 
-      - uses: canastro/copy-file-action@master
-        with:
-          source: "prod.yml"
-          target: "serverless.yml"
-
       - uses: actions/setup-node@v2-beta
         with:
           node-version: "12"
@@ -36,13 +31,8 @@ jobs:
       - name: Serverless AWS authentication
         run: npx serverless --component=serverless-next config credentials --provider aws --key ${{ secrets.AWS_ACCESS_KEY_ID }} --secret ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
-      # comment out this section on initial deploy
-      - name: Download `.serverless` state from S3
-        run: aws s3 sync s3://bhall2001-serverless-state-bucket/your-site-name/staging/.serverless .serverless --delete
-      # end comment out this section on initial deploy
-
       - name: Deploy to AWS
         run: npx serverless
 
       - name: Upload `.serverless` state to S3
-        run: aws s3 sync .serverless s3://bhall2001-serverless-state-bucket/your-site-name/staging/.serverless --delete
+        run: aws s3 sync .serverless s3://test-serverless-state-bucket/your-site-name/staging/.serverless --delete
