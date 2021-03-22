@@ -1,0 +1,17 @@
+{
+  "name": "iusk2b9-oneazn7",
+  "hash": "pg2UNKxgbADjettWC4PGi2sBjhGPT0ZfT1PL/PUvLTM=",
+  "description": "Default Lambda@Edge for Next CloudFront distribution",
+  "memory": 512,
+  "timeout": 10,
+  "code": "/Users/hugobelanger/Documents/nextjs/nextjs_test/.serverless_nextjs/default-lambda",
+  "shims": [],
+  "handler": "index.handler",
+  "runtime": "nodejs12.x",
+  "env": {},
+  "role": {
+    "arn": "arn:aws:iam::186384794272:role/iusk2b9-jpk5nh3"
+  },
+  "arn": "arn:aws:lambda:us-east-1:186384794272:function:iusk2b9-oneazn7",
+  "region": "us-east-1"
+}

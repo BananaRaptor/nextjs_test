@@ -1,0 +1,15 @@
+name: test-prod
+region: us-east-2
+
+prod-your-site-name:
+  component: "@sls-next/serverless-component@latest"
+  inputs:
+    bucketName: test-sadgfddrewed-prod-s3
+    description: "Lambda@Edge for prod-your-site-name"
+    name:
+      defaultLambda: test-prod-lambda
+      apiLambda: test-prod-lambda
+    publicDirectoryCache: true
+    runtime:
+      defaultLambda: "nodejs12.x"
+      apiLambda: "nodejs12.x"
