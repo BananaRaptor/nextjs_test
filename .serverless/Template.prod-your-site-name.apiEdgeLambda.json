@@ -1,6 +1,6 @@
 {
   "name": "test-prod-lambda",
-  "hash": "FBl3qGo2Yew4PGaxW+Ermn6It+N20PgMxr39x0OQXGU=",
+  "hash": "ZV7WSW9L6NWG+v3pruE3Eory5Q1EC/UyNZbZ5CNwYB0=",
   "description": "Lambda@Edge for prod-your-site-name (API)",
   "memory": 512,
   "timeout": 10,
