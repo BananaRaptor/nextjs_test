@@ -91,14 +91,14 @@ export default ({ children }) => {
                     </aside>
                 </div>
                 <div className="column is-10">
-                    <nav className="breadcrumb" aria-label="breadcrumbs">
+                    {/* <nav className="breadcrumb" aria-label="breadcrumbs">
                         <ul>
                             <li><a href="../">Bulma</a></li>
                             <li><a href="../">Templates</a></li>
                             <li><a href="../">Examples</a></li>
                             <li className="is-active"><a href="#" aria-current="page">Admin</a></li>
                         </ul>
-                    </nav>
+                    </nav> */}
                     {children}
                     
         </div>
