@@ -1,10 +1,7 @@
 {
   "name": "iusk2b9-15apiii",
   "arn": "arn:aws:iam::186384794272:role/iusk2b9-15apiii",
-  "service": [
-    "edgelambda.amazonaws.com",
-    "lambda.amazonaws.com"
-  ],
+  "service": ["edgelambda.amazonaws.com", "lambda.amazonaws.com"],
   "policy": {
     "Version": "2012-10-17",
     "Statement": [
@@ -20,10 +17,7 @@
       {
         "Effect": "Allow",
         "Resource": "arn:aws:s3:::test-sadgfddrewed-prod-s3/*",
-        "Action": [
-          "s3:GetObject",
-          "s3:PutObject"
-        ]
+        "Action": ["s3:GetObject", "s3:PutObject"]
       }
     ]
   },

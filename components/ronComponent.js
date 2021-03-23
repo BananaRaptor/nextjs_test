@@ -3,10 +3,7 @@ import QuoteComponent from "./quotesComponent";
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
 export default ({ children }) => {
-  const { data, error } = useSWR(
-    "https://jsonplaceholder.typicode.com/users/2",
-    fetcher
-  );
+  const { data, error } = useSWR("http://localhost:3030/test", fetcher);
 
   if (error) return <div>failed to load</div>;
   if (!data) return <div>loading...</div>;
@@ -16,7 +13,7 @@ export default ({ children }) => {
       <section class="hero is-info welcome is-small">
         <div class="hero-body">
           <div class="container">
-            <h1 class="title">Hello, {data.name}.</h1>
+            <h1 class="title">Hello, {data.data[0].text}.</h1>
             <h2 class="subtitle">I hope you are having a great day!</h2>
           </div>
         </div>
