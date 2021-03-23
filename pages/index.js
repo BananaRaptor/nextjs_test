@@ -9,7 +9,7 @@ export default () => (
   <LayoutDash>
     <section className="section">
       <div className="container">
-        <RonSwanson />
+            <RonSwanson />
         <random />
       </div>
     </section>
