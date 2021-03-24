@@ -1,7 +1,6 @@
 module.exports = {
   parser: 'babel-eslint', // define babel as the parser
-  extends: ['eslint:recommended', 'plugin:react/recommended', 'prettier'],
-  plugins: ['react'],
+  extends: ['eslint:recommended', 'prettier'],
   parserOptions: {
     ecmaVersion: 2018, // understands let, const and other features
     sourceType: 'module', // understands the use of import and export
