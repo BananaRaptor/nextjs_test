@@ -10,8 +10,7 @@
     "format": "npm run prettier -- --write",
     "lint": "npx eslint ./",
     "lint:fix": "npm run lint -- --fix",
-    "validate": "npm run prettier -- --list-different && npm run lint",
-    "prepare": "husky install"
+    "validate": "npm run prettier -- --list-different && npm run lint"
   },
   "lint-staged": {
     "**/*.{js,jsx,css}": [
