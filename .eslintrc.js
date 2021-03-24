@@ -1,6 +1,6 @@
 module.exports = {
   parser: "babel-eslint", // define babel as the parser
-  extends: ["eslint:recommended", "prettier"],
+  extends: ["eslint:recommended", "plugin:react/recommended", "prettier"],
   parserOptions: {
     ecmaVersion: 2018, // understands let, const and other features
     sourceType: "module", // understands the use of import and export
@@ -11,5 +11,12 @@ module.exports = {
   env: {
     browser: true, // add browser globals variables like document and window
     es6: true, // add globals like Set
+  },
+  rules: {
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+  },
+  globals: {
+    React: "writable",
   },
 };

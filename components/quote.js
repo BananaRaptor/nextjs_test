@@ -1,4 +1,4 @@
-export default ({ text }) => {
+export default function quote({ text }) {
   return (
     <tr>
       <td width="5%">
@@ -12,4 +12,4 @@ export default ({ text }) => {
       </td>
     </tr>
   );
-};
+}

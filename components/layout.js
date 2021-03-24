@@ -1,17 +1,17 @@
 import Head from "next/head";
-import Link from "next/link";
+// import Link from "next/link";
 
-export default ({ children }) => {
+export default function layout({ children }) {
   /*
    * Added this to toggle the is-active class. See:
    *
    * https://bulma.io/documentation/components/navbar/#navbar-menu
    * https://github.com/jgthms/bulma/issues/856
    */
-  const toggleStyles = (event) => {
-    document.querySelector("#burger").classList.toggle("is-active");
-    document.querySelector("#navbarmenu").classList.toggle("is-active");
-  };
+  // const toggleStyles = (event) => {
+  //   document.querySelector("#burger").classList.toggle("is-active");
+  //   document.querySelector("#navbarmenu").classList.toggle("is-active");
+  // };
 
   return (
     <div>
@@ -70,9 +70,9 @@ export default ({ children }) => {
       <div className="container column is-10">{children}</div>
       <footer classNameName="footer">
         <div classNameName="content has-text-centered">
-          <span>I'm the footer</span>
+          <span>Im the footer</span>
         </div>
       </footer>
     </div>
   );
-};
+}

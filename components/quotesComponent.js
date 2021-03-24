@@ -2,7 +2,7 @@ import useSWR from "swr";
 import Quote from "./quote";
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
-export default ({ children }) => {
+export default function quoteComponent() {
   const { data, error } = useSWR(
     "http://ron-swanson-quotes.herokuapp.com/v2/quotes/12",
     fetcher,
@@ -18,9 +18,9 @@ export default ({ children }) => {
     <table className="table is-fullwidth is-striped">
       <tbody>
         {data.map((quote) => (
-          <Quote text={quote} />
+          <Quote key={quote} text={quote} />
         ))}
       </tbody>
     </table>
   );
-};
+}

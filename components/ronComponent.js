@@ -2,7 +2,7 @@ import useSWR from "swr";
 import QuoteComponent from "./quotesComponent";
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
-export default ({ children }) => {
+export default function ronComponent() {
   const { data, error } = useSWR("http://localhost:3030/test", fetcher);
 
   if (error) return <div>failed to load</div>;
@@ -140,4 +140,4 @@ export default ({ children }) => {
       </div>
     </div>
   );
-};
+}
