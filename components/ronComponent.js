@@ -26,37 +26,37 @@ export default function ronComponent() {
             <p className="subtitle">Users</p>
           </article>
         </div>
-        <div className="tile is-parent">
-          <article className="tile is-child box">
-            <p className="title">59k</p>
-            <p className="subtitle">Products</p>
-            </article>
-          </div>
-          <div className="tile is-parent">
-            <article className="tile is-child box">
-              <p className="title">3.4k</p>
-              <p className="subtitle">Open Orders</p>
-            </article>
-          </div>
-          <div className="tile is-parent">
-            <article className="tile is-child box">
-              <p className="title">19</p>
-              <p className="subtitle">Exceptions</p>
-            </article>
-          </div>
-        </div>
-      </section>
-      <div className="columns">
-        <div className="column is-6">
-          <div className="card events-card">
-            <header className="card-header">
-              <p className="card-header-title">Post</p>
-              <a
-                href="#"
-                className="card-header-icon"
-                aria-label="more options"
-              >
-                <span className="icon">
+<div className="tile is-parent">
+<article className="tile is-child box">
+<p className="title">59k</p>
+<p className="subtitle">Products</p>
+</article>
+</div>
+<div className="tile is-parent">
+<article className="tile is-child box">
+  <p className="title">3.4k</p>
+  <p className="subtitle">Open Orders</p>
+</article>
+</div>
+<div className="tile is-parent">
+<article className="tile is-child box">
+  <p className="title">19</p>
+  <p className="subtitle">Exceptions</p>
+</article>
+</div>
+</div>
+</section>
+<div className="columns">
+<div className="column is-6">
+<div className="card events-card">
+<header className="card-header">
+  <p className="card-header-title">Post</p>
+  <a
+    href="#"
+    className="card-header-icon"
+    aria-label="more options"
+  >
+    <span className="icon">
                   <i className="fa fa-angle-down" aria-hidden="true"></i>
                 </span>
               </a>
