@@ -1,9 +1,9 @@
 module.exports = {
-  parser: 'babel-eslint', // define babel as the parser
-  extends: ['eslint:recommended', 'prettier'],
+  parser: "babel-eslint", // define babel as the parser
+  extends: ["eslint:recommended", "prettier"],
   parserOptions: {
     ecmaVersion: 2018, // understands let, const and other features
-    sourceType: 'module', // understands the use of import and export
+    sourceType: "module", // understands the use of import and export
     ecmaFeatures: {
       jsx: true, // understands the use of tags inside js files
     },
@@ -12,4 +12,4 @@ module.exports = {
     browser: true, // add browser globals variables like document and window
     es6: true, // add globals like Set
   },
-}
+};

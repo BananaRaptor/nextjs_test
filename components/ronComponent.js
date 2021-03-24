@@ -51,7 +51,11 @@ export default ({ children }) => {
           <div className="card events-card">
             <header className="card-header">
               <p className="card-header-title">Post</p>
-              <a href="#" className="card-header-icon" aria-label="more options">
+              <a
+                href="#"
+                className="card-header-icon"
+                aria-label="more options"
+              >
                 <span className="icon">
                   <i className="fa fa-angle-down" aria-hidden="true"></i>
                 </span>
@@ -73,7 +77,11 @@ export default ({ children }) => {
           <div className="card">
             <header className="card-header">
               <p className="card-header-title">Inventory Search</p>
-              <a href="#" className="card-header-icon" aria-label="more options">
+              <a
+                href="#"
+                className="card-header-icon"
+                aria-label="more options"
+              >
                 <span className="icon">
                   <i className="fa fa-angle-down" aria-hidden="true"></i>
                 </span>
@@ -82,7 +90,11 @@ export default ({ children }) => {
             <div className="card-content">
               <div className="content">
                 <div className="control has-icons-left has-icons-right">
-                  <input className="input is-large" type="text" placeholder="" />
+                  <input
+                    className="input is-large"
+                    type="text"
+                    placeholder=""
+                  />
                   <span className="icon is-medium is-left">
                     <i className="fa fa-search"></i>
                   </span>
@@ -95,7 +107,11 @@ export default ({ children }) => {
             <div className="card">
               <header className="card-header">
                 <p className="card-header-title">User Search</p>
-                <a href="#" className="card-header-icon" aria-label="more options">
+                <a
+                  href="#"
+                  className="card-header-icon"
+                  aria-label="more options"
+                >
                   <span className="icon">
                     <i className="fa fa-angle-down" aria-hidden="true"></i>
                   </span>
@@ -104,7 +120,11 @@ export default ({ children }) => {
               <div className="card-content">
                 <div className="content">
                   <div className="control has-icons-left has-icons-right">
-                    <input className="input is-large" type="text" placeholder="" />
+                    <input
+                      className="input is-large"
+                      type="text"
+                      placeholder=""
+                    />
                     <span className="icon is-medium is-left">
                       <i className="fa fa-search"></i>
                     </span>

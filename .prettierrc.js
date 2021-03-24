@@ -20,4 +20,4 @@ module.exports = {
    * htmlWhitespaceSensitivity: 'css',
    * endOfLine: 'auto',
    */
-}
+};
