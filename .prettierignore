@@ -2,6 +2,9 @@
 build
 coverage
 node_modules/**
+.serverless/**
+.serverless_nextjs/**
+.next
 
 # Ignore all HTML files:
 *.html

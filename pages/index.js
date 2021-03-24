@@ -7,10 +7,9 @@ import random from "../components/random";
 
 export default () => (
   <LayoutDash>
-              <section className="section">
+    <section className="section">
       <div className="container">
-
-                    <RonSwanson />
+        <RonSwanson />
         <random />
       </div>
     </section>
