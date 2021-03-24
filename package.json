@@ -12,13 +12,17 @@
     "lint:fix": "npm run lint -- --fix",
     "validate": "npm run prettier -- --list-different && npm run lint"
   },
-  "husky":{
-    "hooks":{
+  "husky": {
+    "hooks": {
       "pre-commit": "lint-staged"
     }
   },
-  "lint-staged":{
-    "**/*.{js,jsx,css}": ["npm run format","npm run lint:fix", "git add"]
+  "lint-staged": {
+    "**/*.{js,jsx,css}": [
+      "npm run format",
+      "npm run lint:fix",
+      "git add"
+    ]
   },
   "dependencies": {
     "bulma": "^0.9.2",
