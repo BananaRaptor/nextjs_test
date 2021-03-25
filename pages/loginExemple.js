@@ -1,21 +1,24 @@
 import { Api } from "../api/Api";
+import LoginExample from "../components/LoginExample";
 
 export default function Home({ data }) {
   console.log(data);
 
-  return <div> allo </div>;
+  return (
+    <div>
+      <LoginExample></LoginExample>)<p> {data.text}</p>
+    </div>
+  );
 }
 
 export async function getStaticProps() {
-  const test = new Api("/users");
-  //const res = await test.create({text : "ça marche !"});
-  //const datas = await test.find();
-  const auth = await test.auth({ email: "test@gmail.com", password: "secret" });
+  const datas = new Api();
 
-  //const datas =  await test();
+  const texts = await datas.get("test", 1);
+
   return {
     props: {
-      data: auth,
+      data: texts,
     },
   };
 }

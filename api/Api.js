@@ -7,13 +7,17 @@ export class Api {
 
   constructor() {}
 
-  async find(route) {
+  async find(route, query = {}) {
     // Permet la recherche de plusieurs éléments dans la table
-    // les params sont les conditions de recherches dans la table
+    // la query sont les conditions de recherches dans la table
     // voir https://docs.feathersjs.com/api/databases/querying.html#limit
     // pour plus d'informatiions
 
-    return await client.service(route).find();
+    if (query == undefined) {
+      return await client.service(route).find();
+    } else {
+      return await client.service(route).find(query);
+    }
   }
 
   async get(route, id) {
@@ -66,5 +70,3 @@ export class Api {
     return await client.logout();
   }
 }
-
-export async function fetchText() {}
