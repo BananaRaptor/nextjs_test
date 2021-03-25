@@ -21,12 +21,16 @@
     "*.js": "eslint --cache --fix"
   },
   "dependencies": {
+    "@feathersjs/authentication-client": "github:feathersjs/authentication-client",
+    "@feathersjs/feathers": "^4.5.11",
+    "@feathersjs/socketio-client": "^4.5.11",
     "bulma": "^0.9.2",
     "date-fns": "^2.19.0",
     "next": "10.0.9",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "sass": "^1.32.8",
+    "socket.io-client": "^2.3.0",
     "swr": "^0.5.4"
   },
   "devDependencies": {
